@@ -69,11 +69,41 @@
       <div class="form-group row">
         <label for="sex" class="col-sm-2 col-form-label">Sex</label>
         <div class="col-sm-10">
-          <input type="radio" class="form-control" id="radio">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Male
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Female
+            </label>
+          </div>
         </div>
       </div><br>
 
+      <div class="form-group row">
+        <label for="date" class="col-sm-2 col-form-label">Faculty</label>
+        <div class="col-sm-10">
+          <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+          <datalist id="datalistOptions">
+            <option value="Faculty of Science">
+            <option value="Faculty of Engineering">
+            <option value="Faculty of Arts">
+            <option value="Faculty of Managment">
+            <option value="Faculty of Medicine">
+          </datalist>
+        </div>
+      </div><br>
 
+      <div class="form-group row">
+        <label for="file" class="col-sm-2 col-form-label">Photo</label>
+        <div class="col-sm-10">
+          <input type="file" class="form-control" id="file" ">
+        </div>
+      </div><br>
 
     </form>
   </div>
